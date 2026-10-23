@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio profissional de Rodrigo Machado Schuler: infraestrutura e operações de TI, ITSM, liderança técnica, automação e melhoria contínua.">
+  <meta name="theme-color" content="#10243a">
+  <meta property="og:title" content="Rodrigo Machado Schuler | Portfólio profissional">
+  <meta property="og:description" content="Infraestrutura e Operações de TI · ITSM · Liderança Técnica · Scrum">
+  <title>Rodrigo Machado Schuler | Portfólio profissional</title>
+  <style>
+    :root{--navy:#10243a;--navy2:#173b59;--teal:#20b6a5;--ink:#172536;--muted:#5d6b7a;--bg:#f3f6fa;--paper:#fff;--line:#dfe6ee;--soft:#eaf7f5;--shadow:0 18px 55px rgba(16,36,58,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offset:4px}
+    .wrap{width:min(1120px,calc(100% - 40px));margin:auto}.topbar{background:var(--navy);color:#fff}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:800;letter-spacing:.02em}.brand span{color:var(--teal)}.navlinks{display:flex;gap:24px;align-items:center;font-size:.93rem;color:#e2eaf2}.navlinks a:hover{color:#6ee7d8}.nav-cta{border:1px solid #638097;border-radius:999px;padding:9px 15px}
+    .hero{position:relative;overflow:hidden;background:linear-gradient(120deg,var(--navy) 0%,#173b59 65%,#176b77 100%);color:#fff;padding:88px 0 78px}.hero:after{content:"";position:absolute;width:440px;height:440px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-90px;top:-150px;box-shadow:0 0 0 50px rgba(255,255,255,.025),0 0 0 100px rgba(255,255,255,.025);pointer-events:none}
+    .hero-grid{display:grid;grid-template-columns:1.45fr .75fr;gap:54px;align-items:center;position:relative;z-index:1}.eyebrow{font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#6ee7d8}.hero h1{font-size:clamp(2.5rem,6vw,4.8rem);line-height:1.04;letter-spacing:-.045em;margin:15px 0 18px;max-width:780px}.hero h2{font-size:clamp(1.15rem,2.4vw,1.55rem);font-weight:500;line-height:1.45;color:#d9e7f1;max-width:720px;margin:0 0 20px}.hero p{max-width:680px;color:#c4d4e1;margin:0}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 19px;border-radius:10px;font-weight:750;border:1px solid transparent;transition:transform .18s,background .18s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--teal);color:#062d34}.btn-outline{border-color:#7894a8;color:white}.hero-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:22px;padding:25px;backdrop-filter:blur(8px)}.hero-card .initials{width:70px;height:70px;display:grid;place-items:center;background:var(--teal);color:#08333a;border-radius:20px;font-weight:900;font-size:1.45rem;margin-bottom:18px}.hero-card h3{margin:0 0 4px;font-size:1.12rem}.hero-card p{font-size:.92rem;color:#d2e0eb}.quicklinks{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.quicklinks span{font-size:.78rem;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 10px;color:#e4f0f5}
+    section{padding:72px 0}.section-head{max-width:720px;margin-bottom:30px}.kicker{color:#087e78;font-size:.77rem;font-weight:850;letter-spacing:.15em;text-transform:uppercase}.section-head h2{font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.15;letter-spacing:-.03em;margin:8px 0 12px;color:var(--navy)}.section-head p{color:var(--muted);margin:0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.stat{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:23px;box-shadow:0 6px 20px rgba(16,36,58,.035)}.stat strong{display:block;color:#087e78;font-size:2.2rem;letter-spacing:-.05em;line-height:1.1}.stat span{display:block;color:var(--muted);font-size:.9rem;margin-top:9px}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:28px}.panel h3{margin:0 0 12px;color:var(--navy);font-size:1.2rem}.panel p{margin:0;color:var(--muted)}.focus-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}.focus-item{background:var(--soft);border-radius:10px;padding:12px;font-weight:700;font-size:.9rem;color:#14534f}
+    .experience-list{display:grid;grid-template-columns:1fr 1fr;gap:16px}.experience{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px}.experience .date{color:#087e78;font-size:.78rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase}.experience h3{margin:6px 0 3px;color:var(--navy);font-size:1.08rem}.experience .company{color:var(--muted);font-size:.92rem}.experience p{color:var(--muted);font-size:.93rem;margin:12px 0 0}.pill-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.pill{background:#e7eef5;color:#23435b;padding:7px 11px;border-radius:999px;font-size:.83rem;font-weight:700}
+    .cta-band{background:var(--navy);color:white;border-radius:22px;padding:34px;display:flex;align-items:center;justify-content:space-between;gap:24px}.cta-band h2{margin:0 0 8px;font-size:clamp(1.5rem,3vw,2rem)}.cta-band p{margin:0;color:#c4d4e1;max-width:650px}.footer{background:#0b1b2b;color:#c0cfdb;padding:28px 0;font-size:.88rem}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.footer a{color:#6ee7d8}
+    @media(max-width:800px){.hero-grid,.about-grid{grid-template-columns:1fr}.hero{padding:65px 0}.hero-card{max-width:480px}.stats{grid-template-columns:repeat(2,1fr)}.experience-list{grid-template-columns:1fr}.nav{padding:15px 0;align-items:flex-start;flex-direction:column}.navlinks{flex-wrap:wrap;gap:14px}.cta-band{align-items:flex-start;flex-direction:column}}
+    @media(max-width:480px){.wrap{width:min(100% - 28px,1120px)}section{padding:52px 0}.stats{gap:10px}.stat{padding:16px}.stat strong{font-size:1.8rem}.focus-list{grid-template-columns:1fr}.panel{padding:21px}.hero h1{font-size:2.55rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="./" aria-label="Página inicial">RODRIGO<span>.</span></a>
+      <nav class="navlinks" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a><a href="#resultados">Resultados</a><a href="#experiencia">Experiência</a><a href="#competencias">Competências</a>
+        <a class="nav-cta" href="curriculo.html">Currículo completo ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Infraestrutura e Operações de TI · ITSM · Liderança</div>
+          <h1>Rodrigo Machado Schuler</h1>
+          <h2>Transformando desafios de tecnologia em operações confiáveis, equipes fortes e resultados mensuráveis.</h2>
+          <p>Profissional de Tecnologia da Informação com trajetória em infraestrutura, sustentação de ambientes críticos, gestão de serviços, automação e liderança técnica. Experiência em melhoria contínua, indicadores operacionais e desenvolvimento de equipes.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="curriculo.html">Ver currículo completo <span aria-hidden="true">→</span></a>
+            <a class="btn btn-outline" href="curriculo.html#print">Imprimir / salvar em PDF</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Resumo profissional">
+          <div class="initials" aria-hidden="true">RS</div>
+          <h3>Operações com visão de negócio</h3>
+          <p>Conectando estabilidade operacional, governança de serviços, automação e experiência do cliente.</p>
+          <div class="quicklinks"><span>ITIL / ITSM</span><span>Windows & Linux</span><span>Power BI</span><span>Scrum</span><span>Liderança</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="resultados">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Impacto em números</div>
+          <h2>Resultados que ajudam a contar a trajetória</h2>
+          <p>Indicadores retirados do currículo profissional fornecido. Os resultados representam experiências distintas, não necessariamente o cenário atual.</p>
+        </div>
+        <div class="stats">
+          <article class="stat"><strong>5.250</strong><span>servidores no parque com aplicação padronizada de patches</span></article>
+          <article class="stat"><strong>98%</strong><span>de conformidade reportada em indicadores de servidores</span></article>
+          <article class="stat"><strong>30</strong><span>técnicos de campo coordenados em cinco estados do Nordeste</span></article>
+          <article class="stat"><strong>50%</strong><span>de redução no tempo de fila de atendimento em uma operação</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" style="background:#fff">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Perfil profissional</div>
+          <h2>Tecnologia, pessoas e melhoria contínua</h2>
+        </div>
+        <div class="about-grid">
+          <article class="panel">
+            <h3>Resumo</h3>
+            <p>Profissional sênior de TI com mais de 16 anos de experiência registrada em infraestrutura de servidores, sustentação de ambientes críticos, liderança de equipes e coordenação de operações e projetos de tecnologia. Atuação em governança de TI com práticas ITIL, gestão de incidentes, mudanças, problemas e SLAs. Combina conhecimento técnico, gestão de pessoas, metodologias ágeis e análise de dados para otimizar processos e elevar a confiabilidade dos serviços.</p>
+          </article>
+          <article class="panel">
+            <h3>Áreas de atuação</h3>
+            <div class="focus-list">
+              <div class="focus-item">Infraestrutura e servidores</div><div class="focus-item">Gestão de serviços / ITSM</div>
+              <div class="focus-item">Liderança técnica</div><div class="focus-item">Gestão de pessoas</div>
+              <div class="focus-item">Automação operacional</div><div class="focus-item">Indicadores e Power BI</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Experiência em destaque</div>
+          <h2>Evolução de suporte à liderança técnica</h2>
+          <p>Uma seleção das experiências mais relevantes. O histórico completo, com atividades e tecnologias por empresa, está disponível na página de currículo.</p>
+        </div>
+        <div class="experience-list">
+          <article class="experience"><div class="date">Nov. 2025 – Set. 2026</div><h3>Líder Técnico</h3><div class="company">Atos / Semantix</div><p>Liderança técnica em soluções de Engenharia Digital, integrações entre plataformas e visualização de dados. Um fluxo de extração e disponibilização de dados passou a levar menos de quatro horas, ante um processo que levava meses.</p></article>
+          <article class="experience"><div class="date">Jun. 2022 – Out. 2025</div><h3>Coordenador de Infraestrutura e Sustentação de TI</h3><div class="company">Atos Brasil</div><p>Liderança de equipe multidisciplinar de 13 profissionais de servidores e HPC. Padronização de patches em parque de 5.250 servidores e redução do tempo de execução de quatro para duas semanas.</p></article>
+          <article class="experience"><div class="date">Jan. 2016 – Ago. 2018</div><h3>Coordenador de Field Service</h3><div class="company">Proxxi Tecnologia</div><p>Gestão de 30 técnicos em cinco estados do Nordeste, com foco em SLAs, logística, eficiência de atendimento e satisfação dos clientes. Redução de 40% no tempo médio de atendimento e satisfação de 95% reportada.</p></article>
+          <article class="experience"><div class="date">Out. 2008 – Nov. 2013</div><h3>Início da trajetória em tecnologia</h3><div class="company">Stefanini · Vanguard-IT · Hospital São Salvador · IBM</div><p>Experiência em Service Desk, suporte N2, servidores Windows e Linux, ferramentas de monitoramento, automação bancária, documentação técnica e coordenação de suporte.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="competencias" style="background:#fff">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Conhecimentos</div>
+          <h2>Competências e tecnologias</h2>
+          <p>Principais áreas e ferramentas citadas no currículo.</p>
+        </div>
+        <div class="pill-list">
+          <span class="pill">Infraestrutura de TI</span><span class="pill">Windows Server</span><span class="pill">Linux / Red Hat</span><span class="pill">VMware</span><span class="pill">Hyper-V</span><span class="pill">ITSM / ITIL</span><span class="pill">ServiceNow</span><span class="pill">Gestão de SLA</span><span class="pill">Incidentes e mudanças</span><span class="pill">Power BI</span><span class="pill">Python</span><span class="pill">PowerShell</span><span class="pill">Ansible</span><span class="pill">Zabbix</span><span class="pill">Grafana</span><span class="pill">Tenable</span><span class="pill">SCCM</span><span class="pill">OpenShift</span><span class="pill">HPC / Clusters</span><span class="pill">Scrum</span><span class="pill">Liderança técnica</span><span class="pill">Gestão de pessoas</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="cta-band">
+          <div><h2>Vamos conversar sobre tecnologia e resultados?</h2><p>Consulte o histórico completo, formação, certificações e cursos no currículo detalhado.</p></div>
+          <a class="btn btn-primary" href="curriculo.html">Abrir currículo completo →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> Rodrigo Machado Schuler</span>
+      <span>Recife, PE · <a href="https://www.linkedin.com/in/rmschuler/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="curriculo.html">Currículo</a></span>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
