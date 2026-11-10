@@ -1,0 +1,46 @@
+name: Deploy site no GitHub Pages
+
+on:
+  push:
+    branches: ['main']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Uma publicação por vez; não cancela a que já está em andamento
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Pages
+        uses: actions/configure-pages@v5
+
+      - name: Montar pasta do site (sem arquivos de desenvolvimento)
+        run: |
+          mkdir _site
+          rsync -a \
+            --exclude='.git' --exclude='.github' --exclude='tools' --exclude='_site' \
+            --exclude='README.md' --exclude='.editorconfig' --exclude='.prettierrc' \
+            ./ _site/
+
+      - name: Enviar artefato
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
+
+      - name: Publicar
+        id: deployment
+        uses: actions/deploy-pages@v4
